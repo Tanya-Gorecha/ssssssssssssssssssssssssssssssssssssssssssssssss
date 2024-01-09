@@ -1,0 +1,57 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+     <center>
+        <div class="heading">
+            <h1 class="btn btn-primary" style="font-size:30px;color:rgb(0, 0, 0);">PING PONG GAME</h1>
+            <br>
+            <br>
+    
+            <button data-toggle = “modal” data-target=”#myModal” style="color:black;">Instructions</button>
+            <br>
+            <br>
+            <button onclick="startGame()" style="color:rgb(0, 0, 0); background-color: rgb(212, 178, 243);">Start Game</button>
+            <h1 id="status" style="color: rgb(0, 0, 0);background-color: rgb(189, 197, 240)"> </h1>
+        </div>
+        <div id="myModal" class="fade modal">
+         <div class="modal-dialog">
+            <div class="modal-dialog">
+              <div class="modal-body" style="font-size:50px;">
+                <ol>
+                    <li>First , use your  arrow keys or mouse movement to move your paddle</li>
+                    <li>Second ,  focus on the ball cause if you loose it you are out</li>
+                    <li>Third , GET READY TO PLAY</li>
+                  </ol>
+              </div>
+                <div class="modal-header">
+                    <h3 style="background-color:rgb(150, 150, 253); color:black;">instructions</h3>
+                    <buttonn data-dismiss="modal" class="close">&times;</buttonn>
+                </div>
+            </div>
+         </div>
+        </div>
+        <button style="color:white;background-color: blueviolet;" onclick="restart()">Restart</button>
+        <div id="canvas">
+            
+        </div>
+   <div class="footer">
+    <h3>by Tanya Gorecha</h3>
+   </div>
+     </center>
+        <script src="main.js"></script>
+    </body>
+</html>

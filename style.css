@@ -1,0 +1,11 @@
+.footer{
+    background-color: rgb(173, 161, 245);
+    line-height: 2;
+    width:100%;
+    text-align: center;
+    position:fixed;
+    bottom:0;
+}
+#canvas{
+   border: 3px white ridge;
+}
